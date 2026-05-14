@@ -21,6 +21,17 @@ Asesor financiero independiente. 20 clientes HNWI activos en Bioongo. Country Ma
 
 Sin output público, no hay referente. Cada paso documentado aquí.
 
+## Stack que voy a aprender
+
+- HTML
+- CSS
+- JavaScript
+- Next.js
+- Tailwind
+- Supabase
+- Python
+- Anthropic API
+
 ---
 
 Día 1: 12 de mayo de 2026.
