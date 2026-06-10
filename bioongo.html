@@ -4,69 +4,96 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bioongo — Asesoría Financiera Independiente</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-900 font-sans antialiased">
 
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#contacto">Contacto</a></li>
+  <header class="fixed top-0 left-0 w-full z-50 bg-slate-900/95 backdrop-blur-sm border-b border-slate-700">
+    <nav class="max-w-5xl mx-auto px-6 py-4">
+      <ul class="flex gap-8 justify-end items-center list-none m-0 p-0">
+        <li><a href="#inicio" class="text-slate-300 hover:text-white text-sm tracking-wide transition-colors duration-200">Inicio</a></li>
+        <li><a href="#servicios" class="text-slate-300 hover:text-white text-sm tracking-wide transition-colors duration-200">Servicios</a></li>
+        <li><a href="#sobre-mi" class="text-slate-300 hover:text-white text-sm tracking-wide transition-colors duration-200">Sobre mí</a></li>
+        <li><a href="#contacto" class="text-sm tracking-wide px-4 py-2 bg-sky-700 hover:bg-sky-600 text-white rounded transition-colors duration-200">Contacto</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
 
-    <section id="inicio">
-      <h1>Bioongo</h1>
-      <p>Asesoría financiera independiente para patrimonios que merecen atención seria.</p>
+    <section id="inicio" class="bg-slate-900 text-white pt-40 pb-32 px-6">
+      <div class="max-w-3xl mx-auto text-center">
+        <h1 class="text-5xl font-light tracking-tight mb-6">Bioongo</h1>
+        <p class="text-xl text-slate-300 font-light leading-relaxed max-w-xl mx-auto">Asesoría financiera independiente para patrimonios que merecen atención seria.</p>
+        <a href="#contacto-form" class="inline-block mt-10 px-8 py-3 border border-slate-400 text-slate-300 hover:border-white hover:text-white text-sm tracking-widest uppercase transition-colors duration-300">Hablemos</a>
+      </div>
     </section>
 
-    <section id="servicios">
-      <h2>Servicios</h2>
-      <ul>
-        <li>Planificación patrimonial personalizada</li>
-        <li>Optimización fiscal y de inversiones</li>
-        <li>Acompañamiento en decisiones financieras clave</li>
-      </ul>
+    <section id="servicios" class="py-24 px-6 bg-white">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-2xl font-light tracking-tight text-slate-900 mb-12 text-center">Servicios</h2>
+        <ul class="grid grid-cols-1 md:grid-cols-3 gap-8 list-none m-0 p-0">
+          <li class="border-l-4 border-sky-700 pl-6 py-2">
+            <p class="text-slate-900 font-medium mb-2">Planificación patrimonial</p>
+            <p class="text-slate-500 text-sm leading-relaxed">Estrategia personalizada para proteger y hacer crecer tu patrimonio a largo plazo.</p>
+          </li>
+          <li class="border-l-4 border-sky-700 pl-6 py-2">
+            <p class="text-slate-900 font-medium mb-2">Optimización fiscal y de inversiones</p>
+            <p class="text-slate-500 text-sm leading-relaxed">Estructuras eficientes que minimizan la carga impositiva sin comprometer el rendimiento.</p>
+          </li>
+          <li class="border-l-4 border-sky-700 pl-6 py-2">
+            <p class="text-slate-900 font-medium mb-2">Acompañamiento en decisiones clave</p>
+            <p class="text-slate-500 text-sm leading-relaxed">Consejo independiente en los momentos que más importan, sin conflictos de interés.</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section id="sobre-mi">
-      <h2>Sobre mí</h2>
-      <p>Soy asesor financiero independiente con enfoque en la honestidad, la claridad y el largo plazo. No cobro comisiones de productos: mi único interés es tu patrimonio.</p>
+    <section id="sobre-mi" class="py-24 px-6 bg-slate-50">
+      <div class="max-w-2xl mx-auto text-center">
+        <h2 class="text-2xl font-light tracking-tight text-slate-900 mb-8">Sobre mí</h2>
+        <p class="text-slate-600 leading-relaxed text-lg font-light">Soy asesor financiero independiente con enfoque en la honestidad, la claridad y el largo plazo. No cobro comisiones de productos: mi único interés es tu patrimonio.</p>
+      </div>
     </section>
 
-    <section id="contacto-form">
-      <h2>Escríbeme</h2>
-      <form action="#" method="post">
-        <fieldset>
-          <legend>Datos de contacto</legend>
+    <section id="contacto-form" class="py-24 px-6 bg-white">
+      <div class="max-w-xl mx-auto">
+        <h2 class="text-2xl font-light tracking-tight text-slate-900 mb-10 text-center">Escríbeme</h2>
+        <form action="#" method="post">
+          <fieldset class="border-0 p-0 m-0 flex flex-col gap-6">
+            <legend class="sr-only">Datos de contacto</legend>
 
-          <label for="nombre">Nombre</label>
-          <input type="text" id="nombre" name="nombre" required>
+            <div class="flex flex-col gap-1">
+              <label for="nombre" class="text-sm font-medium text-slate-700 tracking-wide">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required class="border border-slate-300 rounded px-4 py-3 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-sky-700 focus:border-transparent transition">
+            </div>
 
-          <label for="email">Correo electrónico</label>
-          <input type="email" id="email" name="email" required>
+            <div class="flex flex-col gap-1">
+              <label for="email" class="text-sm font-medium text-slate-700 tracking-wide">Correo electrónico</label>
+              <input type="email" id="email" name="email" required class="border border-slate-300 rounded px-4 py-3 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-sky-700 focus:border-transparent transition">
+            </div>
 
-          <label for="telefono">Teléfono</label>
-          <input type="tel" id="telefono" name="telefono">
+            <div class="flex flex-col gap-1">
+              <label for="telefono" class="text-sm font-medium text-slate-700 tracking-wide">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" class="border border-slate-300 rounded px-4 py-3 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-sky-700 focus:border-transparent transition">
+            </div>
 
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+            <div class="flex flex-col gap-1">
+              <label for="mensaje" class="text-sm font-medium text-slate-700 tracking-wide">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" class="border border-slate-300 rounded px-4 py-3 text-slate-900 text-sm focus:outline-none focus:ring-2 focus:ring-sky-700 focus:border-transparent transition resize-none"></textarea>
+            </div>
 
-          <button type="submit">Enviar mensaje</button>
-        </fieldset>
-      </form>
+            <button type="submit" class="bg-slate-900 hover:bg-slate-700 text-white text-sm tracking-widest uppercase py-4 px-8 rounded transition-colors duration-300 mt-2">Enviar mensaje</button>
+          </fieldset>
+        </form>
+      </div>
     </section>
 
   </main>
 
-  <footer id="contacto">
-    <address>
-      Contacto: <a href="mailto:claudio.bustamante@bioongo.com">claudio.bustamante@bioongo.com</a>
+  <footer id="contacto" class="bg-slate-900 py-8 px-6">
+    <address class="max-w-5xl mx-auto text-center not-italic">
+      <a href="mailto:claudio.bustamante@bioongo.com" class="text-slate-400 hover:text-white text-sm tracking-wide transition-colors duration-200">claudio.bustamante@bioongo.com</a>
     </address>
   </footer>
 
