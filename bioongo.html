@@ -96,6 +96,19 @@
       <a href="mailto:claudio.bustamante@bioongo.com" class="text-slate-400 hover:text-white text-sm tracking-wide transition-colors duration-200">claudio.bustamante@bioongo.com</a>
     </address>
   </footer>
+  
+  <script>
+    function saludar() {
+      alert("Hola, soy Claudio. Bienvenido a Bioongo.");
+    }
+  </script>
+  <script>
+    document.getElementById('contacto-form').querySelector('form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const nombre = document.getElementById('nombre').value.trim();
+      alert('Gracias, ' + nombre + '. Te contactaré pronto.');
+    });
+  </script>
 
 </body>
 </html>
