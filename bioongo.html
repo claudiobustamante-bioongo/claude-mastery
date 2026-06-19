@@ -86,6 +86,7 @@
             </div>
 
             <button type="submit" class="bg-slate-900 hover:bg-slate-700 text-white text-sm tracking-widest uppercase py-4 px-8 rounded transition-colors duration-300 mt-2">Enviar mensaje</button>
+            <button id="btn-limpiar" class="text-slate-500 hover:text-slate-700 text-sm tracking-wide py-2 transition-colors duration-200">Limpiar formulario</button>
           </fieldset>
         </form>
       </div>
@@ -117,7 +118,13 @@
       const cantidad = document.getElementById('mensaje').value.length;
       document.getElementById('contador-mensaje').textContent = cantidad + ' caracteres';
     });
-    
+    document.getElementById('btn-limpiar').addEventListener('click', function(event) {
+      event.preventDefault();
+      document.getElementById('nombre').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('telefono').value = '';
+      document.getElementById('mensaje').value = '';
+    });
   </script>
 
 </body>
